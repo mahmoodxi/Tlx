@@ -1,6 +1,6 @@
 echo '* libraries/restart-without-asking boolean true' | sudo debconf-set-selections
 apt-get update
-apt-get install python3-pip git -y
+apt-get install python3-pip git net-tools -y
 pip3 install requests flask names
 git clone https://github.com/mahmoodxi/Tele /var/MTProxy
 chmod +x /var/MTProxy/objs/bin/mtproto-proxy
