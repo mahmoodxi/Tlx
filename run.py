@@ -32,7 +32,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/var/MTProxy/objs/bin
-ExecStart=/var/MTProxy/objs/bin/mtproto-proxy -u nobody -p 5000 -H 443 -S """+str(secret)+""" -P """+str(tag2)+""" -D """+str(tls)+""" --aes-pwd proxy-secret proxy-multi.conf -M 4
+ExecStart=/var/MTProxy/objs/bin/mtproto-proxy -u nobody -p 5000 -H 443 -S """+str(secret)+""" -P """+str(tag2)+""" -D """+str(tls)+""" --aes-pwd proxy-secret proxy-multi.conf -M 1
 Restart=on-failure
 
 [Install]
